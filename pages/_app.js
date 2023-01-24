@@ -1,10 +1,15 @@
 import Layout from "@/components/Global/Layout";
+
+import { appWithTranslation } from "next-i18next";
+
 import "../styles/index.scss";
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
-}
+};
+
+export default appWithTranslation(App);
