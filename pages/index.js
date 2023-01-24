@@ -9,7 +9,6 @@ function Home() {
 
   return (
     <div>
-      {/* <h1>{t("title")}</h1> */}
       <Heading text={t("title")} />
       <Link href={"/education"}>Education</Link>
     </div>
