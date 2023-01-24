@@ -1,17 +1,17 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 
-import Heading from "@/components/Heading";
-import Link from "next/link";
+// import Heading from "@/components/Heading";
+// import Link from "next/link";
+
+import Main from "@/components/Home/Main/Main";
 
 function Home() {
-  const { t } = useTranslation("home");
-
   return (
-    <div>
-      <Heading text={t("title")} />
-      <Link href={"/education"}>Education</Link>
-    </div>
+    <main>
+      <Main />
+      {/* <Heading text={t("title")} /> */}
+      {/* <Link href={"/education"}>Education</Link> */}
+    </main>
   );
 }
 

@@ -1,5 +1,23 @@
 {
   "header": {
     "LanguageToogler": "Go to English site"
+  },
+
+  "footer": {
+    "address": {
+      "street": "вулиця Банкова 11",
+      "city and zip": "Київ, 01220",
+      "county": "Україна"
+    },
+    "support": {
+      "title": "Пожертвувальний рахунок",
+      "iban": "IBAN: UA00 0000 0000 0000 0000 00",
+      "bank": "PrivatBank 0000 2222 3333 4444"
+    },
+    "nav": {
+      "Legal": "Legal",
+      "About": "About",
+      "Privacy": "Privacy"
+    }
   }
 }
