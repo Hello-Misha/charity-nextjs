@@ -4,10 +4,10 @@ import Image from "next/image";
 
 import classes from "./Partners.module.scss";
 
-// import SmileTrainX1 from "../../../img/SmileTrain-X1.png";
-// import SmileTrainX2 from "../../../img/SmileTrain-x2.png";
-// import BeyondWordsX1 from "../../../img/BeyondWords-X1.png";
-// import BeyondWordsX2 from "../../../img/BeyondWords-x2.png";
+import supportImage from "../../../public/img/support.png";
+
+import SmileTrain from "../../../public/img/SmileTrain-x2.png";
+import BeyondWords from "../../../public/img/BeyondWords-x2.png";
 
 function Partners() {
   const { t } = useTranslation("home");
@@ -15,11 +15,12 @@ function Partners() {
     <section className={classes.section}>
       <div className={`${classes.section__partner}`}>
         <Image
-          src="/img/SmileTrain-X1.png"
-          srcSet={`/img/SmileTrain-X1.png 300w, /img/SmileTrain-X2.png 768w`}
+          src={SmileTrain}
+          // srcSet={`/img/SmileTrain-X1.png 300w, /img/SmileTrain-X2.png 768w`}
           width={500}
           height={500}
           alt="SmileTrain logo"
+          placeholder="blur"
           className={`${classes.section__partner__img}`}
         />
 
@@ -37,11 +38,12 @@ function Partners() {
         </p>
 
         <Image
-          src="/img/BeyondWords-X1.png"
-          srcSet={`/img/BeyondWords-X1.png" 300w, /img/BeyondWords-X2.png" 768w`}
+          src={BeyondWords}
+          // srcSet={`/img/BeyondWords-X1.png" 300w, /img/BeyondWords-X2.png" 768w`}
           width={500}
           height={500}
           alt="BeyondWords logo"
+          placeholder="blur"
           className={`${classes.section__partner__img}`}
         />
         <span

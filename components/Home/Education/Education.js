@@ -6,6 +6,8 @@ import Image from "next/image";
 
 import classes from "./Education.module.scss";
 
+import Girl from "../../../public/img/Girl-x2.png";
+
 export default function Education() {
   const { t } = useTranslation("home");
 
@@ -21,13 +23,12 @@ export default function Education() {
       </div>
       <span className={classes.section__circle}></span>
       <Image
-        src="/img/Girl-x1.png"
-        srcSet={`/img/Girl-x1.png 300w, /img/Girl-x2.png 768w`}
+        src={Girl}
         width={700}
         height={700}
         alt="Girl learning"
+        placeholder="blur"
         className={classes.section__img}
-        id="medicineImg"
       />
     </section>
   );

@@ -6,8 +6,7 @@ import Image from "next/image";
 
 import classes from "./Medicine.module.scss";
 
-// import DoctorsX1 from "../../../../img/Doctors-x1.png";
-// import DoctorsX2 from "../../../../img/Doctors-x2.png";
+import Doctors from "../../../public/img/Doctors-x2.png";
 
 export default function Medecine() {
   const { t } = useTranslation("home");
@@ -23,11 +22,12 @@ export default function Medecine() {
         />
       </div>
       <Image
-        src="/img/Doctors-x1.png"
-        srcSet={`/img/Doctors-x1.png 300w, /img/Doctors-x2.png 768w`}
+        src={Doctors}
+        // srcSet={`/img/Doctors-x1.png 300w, /img/Doctors-x2.png 768w`}
         width={700}
         height={700}
         alt="doctors"
+        placeholder="blur"
         className={classes.section__img}
       />
       <span className={classes.section__circle}></span>

@@ -4,8 +4,7 @@ import Image from "next/image";
 
 import classes from "./Founder.module.scss";
 
-// import FounderX1 from "../../../../img/Founder-x1.png";
-// import FounderX2 from "../../../../img/Founder-x2.png";
+import FounderX2 from "../../../public/img/Founder-x2.png";
 
 function Founder() {
   const { t } = useTranslation("home");
@@ -23,11 +22,11 @@ function Founder() {
       </article>
 
       <Image
-        src="/img/Founder-x2.png"
-        // srcSet={`${FounderX1} 300w, ${FounderX2} 768w`}
+        src={FounderX2}
         width={700}
         height={700}
-        alt="doctors"
+        alt="founder"
+        placeholder="blur"
         className={classes.section__img}
       />
       <span className={classes.section__circle}></span>

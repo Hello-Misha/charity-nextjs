@@ -1,17 +1,18 @@
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import classes from "./Support.module.scss";
-// import supportImage from "../../../img/support.png";
+import supportImage from "../../../public/img/support.png";
 
 function Support() {
   const { t } = useTranslation("home");
   return (
     <section className={classes.section}>
       <Image
-        src="/img/support.png"
+        src={supportImage}
         width={500}
         height={500}
         alt="Support"
+        // placeholder="blur"
         className={classes.section__img}
       />
 
