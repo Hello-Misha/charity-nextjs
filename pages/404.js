@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-import Heading from "@/components/Heading";
+import Heading from "@/components/TechComponents/Heading";
 
 function Error() {
   const router = useRouter();

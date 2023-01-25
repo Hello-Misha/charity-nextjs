@@ -14,8 +14,8 @@ function Main() {
         height={500}
         alt="Logo"
       />
-      <h1 className="Title DarkBlue">{t("homePage.main.title")}</h1>
-      <p className="Text DarkBlue">{t("homePage.main.text")}</p>
+      <h1 className="Title DarkBlue">{t("main.title")}</h1>
+      <p className="Text DarkBlue">{t("main.text")}</p>
     </section>
   );
 }

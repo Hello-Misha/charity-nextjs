@@ -4,13 +4,21 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // import Link from "next/link";
 
 import Main from "@/components/Home/Main/Main";
+import Education from "@/components/Home/Education/Education";
+import Medecine from "@/components/Home/Medicine/Medicine";
+import Founder from "@/components/Home/Founder/Founder";
+import Support from "@/components/Home/Support/Support";
+import Partners from "@/components/Home/Partners/Partners";
 
 function Home() {
   return (
     <main>
       <Main />
-      {/* <Heading text={t("title")} /> */}
-      {/* <Link href={"/education"}>Education</Link> */}
+      <Education />
+      <Medecine />
+      <Founder />
+      <Support />
+      <Partners />
     </main>
   );
 }
